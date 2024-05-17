@@ -1,10 +1,8 @@
-// src/App.js
-
 import React from 'react';
 import Header from './Header';
 import Hero from './Hero';
 import About from './About';
-import Facts from './Facts';
+// import Facts from './Facts';
 import Skills from './Skills';
 import Resume from './Resume';
 import Portfolio from './Projects';
