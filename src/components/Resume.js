@@ -12,7 +12,7 @@ function Resume() {
                         <h3 className="resume-title">Education</h3>
                         <div className="resume-item">
                             <h4>Bachelor of Computer Science</h4>
-                            <h5>2020 - 2025</h5>
+                            <h5>Sep 2020 - May 2025</h5>
                             <p><em>Dalhousie University, Canada</em></p>
                             <ul>
                                 <li>Certificate of Communication Technologies</li>

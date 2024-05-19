@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Hero from './Hero';
+import Hero from './Home';
 import About from './About';
 // import Facts from './Facts';
 import Skills from './Skills';

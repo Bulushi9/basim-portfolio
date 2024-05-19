@@ -6,7 +6,7 @@ function Testimonials() {
             <div className="container">
                 <div className="section-title">
                     <h2>Testimonials</h2>
-                    <p>What my clients say about me.</p>
+                    <p>Feedback from mentors and professors</p>
                 </div>
                 <div className="testimonials-slider swiper">
                     <div className="swiper-wrapper">
