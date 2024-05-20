@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faHtml5, faCss3Alt, faJs, faPhp, faReact, faJava, faLinux, faPython,
-    faRProject, faAndroid, faBootstrap, faFigma, faGitAlt
+    faRProject, faAndroid, faBootstrap, faFigma, faGitAlt, faCuttlefish
 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase as solidFaDatabase } from '@fortawesome/free-solid-svg-icons';
 
@@ -21,6 +21,7 @@ const skillsData = [
     { name: "Bootstrap", icon: faBootstrap, color: "#7952B3" },
     { name: "Figma", icon: faFigma, color: "#F24E1E" },
     { name: "Git", icon: faGitAlt, color: "#F05032" },
+    { name: "C Language", icon: faCuttlefish, color: "#A8B9CC" }
 ];
 
 function Skills() {
