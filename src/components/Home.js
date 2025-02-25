@@ -8,7 +8,7 @@ function Home() {
         <h1 className="home-title">Basim Al Bulushi</h1>
         <p className="home-subtitle">I am a <span className="typed-container">
           <ReactTyped
-            strings={['Developer', 'Photographer']}
+            strings={['Cybersecurity Analyst','Developer', 'Photographer']}
             typeSpeed={40}
             backSpeed={50}
             loop

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
   return (
@@ -20,20 +22,23 @@ function About() {
             <div className="row">
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Halifax, Canada &amp; Muscat, Oman</span></li>
+                  <li>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
+                    <strong>City:</strong> 
+                    <span>Halifax, Canada & Muscat, Oman</span>
+                  </li>
                 </ul>
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span> Bachelor's of Computer Science</span></li>
-                  {/* <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:basim@dal.ca" className="email-link">basim@dal.ca</a></li> */}
+                  <li>
+                    <FontAwesomeIcon icon={faGraduationCap} className="icon" />
+                    <strong>Degree:</strong> 
+                    <span>Bachelor's of Computer Science</span>
+                  </li>
                 </ul>
               </div>
             </div>
-            {/* <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p> */}
           </div>
         </div>
       </div>
