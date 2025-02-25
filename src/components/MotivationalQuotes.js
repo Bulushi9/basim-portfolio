@@ -33,7 +33,7 @@ function MotivationalQuotes() {
             setQuote('Keep pushing forward and stay positive!');
             setError(true);
         }
-    }
+    }   
 
     return (
         <div className="motivational-quotes">

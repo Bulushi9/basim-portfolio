@@ -7,41 +7,30 @@ function Contact() {
                 <div className="section-title">
                     <h2>Contact</h2>
                 </div>
+
                 <div className="info-container">
-                    <div className="info-item">
+                    <a href="mailto:basim@dal.com" className="info-item email">
                         <i className="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email:</h4>
-                            <p><a href="mailto:basim@dal.com">basim@dal.com</a></p>
-                        </div>
-                    </div>
-                    <div className="info-item">
+                        <h4>Email</h4>
+                        <p>basim@dal.com</p>
+                    </a>
+                    <a href="https://github.com/bulushi9" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       className="info-item github">
+                        <i className="fab fa-github"></i>
+                        <h4>GitHub</h4>
+                        <p>@bulushi9</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/basimbalushi" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       className="info-item linkedin">
                         <i className="fab fa-linkedin"></i>
-                        <div>
-                            <h4>LinkedIn:</h4>
-                            <p><a href="https://www.linkedin.com/in/basimbalushi" target="_blank" rel="noopener noreferrer">My LinkedIn</a></p>
-                        </div>
-                    </div>
+                        <h4>LinkedIn</h4>
+                        <p>basimbalushi</p>
+                    </a>
                 </div>
-                <form action="forms/contact.php" method="post" className="php-email-form">
-                    <div className="form-group">
-                        <label htmlFor="name">Your Name</label>
-                        <input type="text" name="name" className="form-control" id="name" required />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="email">Your Email</label>
-                        <input type="email" className="form-control" name="email" id="email" required />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="subject">Subject</label>
-                        <input type="text" className="form-control" name="subject" id="subject" required />
-                    </div>
-                    <div className="form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea className="form-control" name="message" rows="10" required></textarea>
-                    </div>
-                    <div className="text-center"><button type="submit">Send Message</button></div>
-                </form>
             </div>
         </section>
     );

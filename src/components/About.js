@@ -12,6 +12,7 @@ function About() {
           <div className="col-lg-4" data-aos="fade-right"></div>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Cybersecurity Analyst &amp; Web Developer.</h3>
+            <div class="csline"></div>
             <p className="fst-italic">
               With a solid foundation in web development and a passion for crafting secure, user-centered solutions, I bring a balanced blend of technical proficiency and creative problem-solving to my projects. At Dalhousie University, I deepened my expertise, particularly in areas combining web development with cybersecurity. 
               My experiences in various internships have honed my ability to navigate complex challenges, ensuring that each website I develop not only meets but exceeds modern web standards. I'm dedicated to enhancing website functionality while ensuring robust security, creating seamless and safe digital environments for users.
@@ -24,15 +25,15 @@ function About() {
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span> Bachelor</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:basim@dal.ca" className="email-link">basim@dal.ca</a></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span> Bachelor's of Computer Science</span></li>
+                  {/* <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="mailto:basim@dal.ca" className="email-link">basim@dal.ca</a></li> */}
                 </ul>
               </div>
             </div>
-            <p>
+            {/* <p>
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

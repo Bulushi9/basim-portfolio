@@ -1,31 +1,36 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useTheme } from '../context/ThemeContext';
 
 function Header() {
+  const { isDarkMode, toggleTheme } = useTheme();
+  const [activeSection, setActiveSection] = useState('home');
+
   useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const navLi = document.querySelectorAll('nav ul li');
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPosition = window.scrollY + 200; // Offset for better detection
 
-    const onScroll = () => {
-      let current = '';
       sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 60) { // Use window.scrollY instead of scrollY
-          current = section.getAttribute('id');
-        }
-      });
+        if (!section) return;
 
-      navLi.forEach(li => {
-        li.classList.remove('active');
-        if (li.querySelector('a').getAttribute('href').substring(1) === current) {
-          li.classList.add('active');
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+
+        if (sectionId && 
+            scrollPosition >= sectionTop && 
+            scrollPosition < sectionTop + sectionHeight) {
+          setActiveSection(sectionId);
         }
       });
     };
 
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
 
     return () => {
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -34,11 +39,27 @@ function Header() {
       <div className="container d-flex align-items-center justify-content-center">
         <nav id="navbar" className="nav-menu navbar">
           <ul>
-            <li className="nav-item"><a href="#home"><i className="fas fa-home"></i> Home</a></li>
-            <li className="nav-item"><a href="#about"><i className="fas fa-user"></i> About</a></li>
-            <li className="nav-item"><a href="#resume"><i className="fas fa-file-alt"></i> Resume</a></li>
-            <li className="nav-item"><a href="#projects"><i className="fas fa-th-large"></i> Projects</a></li>
-            <li className="nav-item"><a href="#contact"><i className="fas fa-envelope"></i> Contact</a></li>
+            <li className={`nav-item ${activeSection === 'home' ? 'active' : ''}`}>
+              <a href="#home"><i className="fas fa-home"></i> Home</a>
+            </li>
+            <li className={`nav-item ${activeSection === 'about' ? 'active' : ''}`}>
+              <a href="#about"><i className="fas fa-user"></i> About</a>
+            </li>
+            <li className={`nav-item ${activeSection === 'resume' ? 'active' : ''}`}>
+              <a href="#resume"><i className="fas fa-file-alt"></i> Resume</a>
+            </li>
+            <li className={`nav-item ${activeSection === 'projects' ? 'active' : ''}`}>
+              <a href="#projects"><i className="fas fa-th-large"></i> Projects</a>
+            </li>
+            <li className={`nav-item ${activeSection === 'contact' ? 'active' : ''}`}>
+              <a href="#contact"><i className="fas fa-envelope"></i> Contact</a>
+            </li>
+            <li className="nav-item">
+              <button onClick={toggleTheme} className="theme-toggle">
+                <i className={`fas ${isDarkMode ? 'fa-toggle-on' : 'fa-toggle-off'}`}></i>
+                <span className="toggle-text">{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
