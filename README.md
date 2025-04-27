@@ -1,3 +1,32 @@
+-- To do:
+
+- Implement Emailjs
+- Change the background pic
+- Update the resume and about
+- Read about the domain
+- Read about deploying it
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

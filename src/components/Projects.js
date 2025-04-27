@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 
-import bookBoxPic from '../img/bookBoxPic.jpg';
-import AblePic from '../img/AblePic.jpg';
-import cipherServerPic from '../img/cipherServerPic.jpg';
-import quickCashPic from '../img/quickCashPic.jpg';
-import tigerNewsPic from '../img/tigerNewsPic.jpg';
-import keyloggerPic from '../img/keyloggerPic.jpg';
-import RootScratchGame from '../img/RootScratchGame.png';
+import bookBoxPic from '../img/BookBox.png';
+import AblePic from '../img/ABLEApp.png';
+import cipherServerPic from '../img/CaeserCipher.png';
+import quickCashPic from '../img/QuickCash.png';
+import tigerNewsPic from '../img/TigerNews.png';
+import keyloggerPic from '../img/KeyLogger.png';
+import RootScratchGame from '../img/Scratch.png';
 
 const projectsData = [
     {
@@ -53,8 +53,6 @@ const projectsData = [
         githubUrl: "https://github.com/Bulushi9/keylogger"
     },
 ];
-
-Modal.setAppElement('#root'); // This is important for accessibility reasons
 
 function Projects() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
